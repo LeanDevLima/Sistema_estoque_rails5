@@ -52,7 +52,7 @@ class DespesasController < ApplicationController
     @despesa.destroy
 
     respond_to do |format|
-      format.html { redirect_to despesas_url, notice: "Despesa was successfully destroyed." }
+      format.html { redirect_to despesas_url, notice: "Despesa excluído com sucesso." }
       format.json { head :no_content }
     end
   end

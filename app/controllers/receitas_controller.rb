@@ -52,7 +52,7 @@ class ReceitasController < ApplicationController
     @receita.destroy
 
     respond_to do |format|
-      format.html { redirect_to receitas_url, notice: "Receita was successfully destroyed." }
+      format.html { redirect_to receitas_url, notice: "Receita excluído com sucesso." }
       format.json { head :no_content }
     end
   end

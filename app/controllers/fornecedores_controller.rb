@@ -52,7 +52,7 @@ class FornecedoresController < ApplicationController
     @fornecedor.destroy
 
     respond_to do |format|
-      format.html { redirect_to fornecedores_url, notice: "Fornecedor was successfully destroyed." }
+      format.html { redirect_to fornecedores_url, notice: "Fornecedor excluído com sucesso." }
       format.json { head :no_content }
     end
   end

@@ -52,7 +52,7 @@ class ProdutosController < ApplicationController
     @produto.destroy
 
     respond_to do |format|
-      format.html { redirect_to produtos_url, notice: "Produto was successfully destroyed." }
+      format.html { redirect_to produtos_url, notice: "Produto excluído com sucesso." }
       format.json { head :no_content }
     end
   end
