@@ -10,12 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_07_30_012520) do
+ActiveRecord::Schema.define(version: 2024_07_30_180241) do
 
   create_table "clientes", force: :cascade do |t|
     t.string "nome"
     t.string "telefone"
     t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "despesas", force: :cascade do |t|
+    t.string "nome"
+    t.string "descricao"
+    t.string "valor"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -36,6 +44,14 @@ ActiveRecord::Schema.define(version: 2024_07_30_012520) do
     t.datetime "vencimento"
     t.float "preco_compra"
     t.float "preco_veda"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "receitas", force: :cascade do |t|
+    t.string "nome"
+    t.string "descricao"
+    t.string "valor"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
