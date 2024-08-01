@@ -23,9 +23,9 @@ ActiveRecord::Schema.define(version: 2024_07_30_181231) do
   create_table "despesas", force: :cascade do |t|
     t.string "nome"
     t.string "descricao"
-    t.string "valor"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "valor"
   end
 
   create_table "fornecedores", force: :cascade do |t|
@@ -69,9 +69,9 @@ ActiveRecord::Schema.define(version: 2024_07_30_181231) do
   create_table "receitas", force: :cascade do |t|
     t.string "nome"
     t.string "descricao"
-    t.string "valor"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "valor"
   end
 
 end
